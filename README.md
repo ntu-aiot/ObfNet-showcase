@@ -48,8 +48,8 @@ For the inversed audios form original MFCC representations, files are named in t
 
 For the inversed audios from obfuscated MFCC representations, files are named in the following format: inverse_obfnet_{conv/fc}+infmodel_{conv/fc}_ test _ {index} _ label _ {digit label}.wav.  
 >For example, inverse_obfnet_conv+infmodel_conv_test_0_label_8.wav means that:  
->a) the involved ObfNet has the structure of 'ObfNet_conv';  
->b) in the training phase the ObfNet is concatenated with the inference model with the structure of 'infmodel_conv';  
+>a) The involved ObfNet has the structure of 'ObfNet_conv';  
+>b) In the training phase, the ObfNet is concatenated with the inference model with the structure of 'infmodel_conv';  
 >c) The index of the MFCC representation in the test set is 0;  
 >d) The true label of the MFCC representation is 8;  
 
@@ -72,7 +72,10 @@ The obfuscated results of the four obfNets are shown in the following four diffe
 ### An example:
 The audio inversed from the original MFCC representations:  
 
-[mfcc_inverse_test_0_label_8.wav ![](imgs/playicon.png)](https://drive.google.com/file/d/1iHjHWWl2bLjnlxrBDsrH1KxUGjo2LGU2/view?usp=sharing)
+[mfcc_inverse_test_0_label_8.wav ![](imgs/playicon.png)](https://drive.google.com/file/d/1iHjHWWl2bLjnlxrBDsrH1KxUGjo2LGU2/view?usp=sharing)  
+
+In the beginning part of the audio inversed from the raw MFCC representations, we can hear the content "eight". Note that there are also noises thereafter due to the necessary constant padding to the MFCC representations in the data processing step in order to unify the sizes of all the MFCC representations.
+
 
 The audios inversed from the corresponding obfuscated MFCC representations by the four ObfNets:
 
@@ -82,4 +85,6 @@ The audios inversed from the corresponding obfuscated MFCC representations by th
 
 [inverse_obfnet_fc+infmodel_conv_test_0_label_8.wav ![](imgs/playicon.png)](https://drive.google.com/file/d/19lF8GVR0FjHtOeiPd7UM0rAClQzctwXM/view?usp=sharing)
 
-[inverse_obfnet_fc+infmodel_fc_test_0_label_8.wav ![](imgs/playicon.png)](https://drive.google.com/file/d/13s2Asu-7IzDPZvYC4VvsapKZ6fX4MsvA/view?usp=sharing)
+[inverse_obfnet_fc+infmodel_fc_test_0_label_8.wav ![](imgs/playicon.png)](https://drive.google.com/file/d/13s2Asu-7IzDPZvYC4VvsapKZ6fX4MsvA/view?usp=sharing)  
+
+These audios inversed from the corresponding obfuscated MFCC representations are totally unrecognizable by human.
