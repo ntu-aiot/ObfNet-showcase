@@ -42,7 +42,7 @@ ii. infmodel_fc: it includes five dense layers with ReLu activation.
 
 In order to make a comparison between the original MFCC representations and the obfuscated ones, we do the MFCC inverse using the Phython package [LibROSA](https://librosa.github.io/librosa/) to convert MFCC representations back to audio (wav files). The audios converted from the original MFCC representations can still be recognized by human despite some noise. In contrast, the audios converted from the obfuscated MFCC representations are unrecognizable by human. Here, the MFCC inversed audios of 20 ramdom original MFCC representations in the test set and the corresponding obfuscated MFCC representations are shown.  
 
-For the inversed audios form original MFCC representations, files are named in the follwing format:mfcc_inverse_test_{index} _ label _ {digit label}.wav. They are in the folder [mfcc_inverse_original](https://github.com/ntu-aiot/obfuscation-results-of-obfnet-on-FSDD/tree/master/mfcc_inverse_original).
+For the inversed audios form original MFCC representations, files are named in the follwing format:mfcc_inverse_test_{index} _ label _ {digit label}.wav. They are in the folder [mfcc_inverse_original](./mfcc_inverse_original).
 
 
 
@@ -55,16 +55,16 @@ For the inversed audios from obfuscated MFCC representations, files are named in
 
 The obfuscated results of the four obfNets are shown in the following four different folders:
 
-1. [mfcc-inverse-obfnet_cnn+infmodel_cnn](https://github.com/ntu-aiot/obfuscation-results-of-obfnet-on-FSDD/tree/master/mfcc-inverse-obfnet_cnn%2Binfmodel_cnn)
+1. [mfcc-inverse-obfnet_cnn+infmodel_cnn](./mfcc-inverse-obfnet_cnn+infmodel_cnn)
 
 
-2. [mfcc-inverse-obfnet_cnn+infmodel_fc](https://github.com/ntu-aiot/obfuscation-results-of-obfnet-on-FSDD/tree/master/mfcc-inverse-obfnet_cnn%2Binfmodel_fc)
+2. [mfcc-inverse-obfnet_cnn+infmodel_fc](./mfcc-inverse-obfnet_cnn+infmodel_fc)
 
 
-3. [mfcc-inverse-obfnet_fc+infmodel_cnn](https://github.com/ntu-aiot/obfuscation-results-of-obfnet-on-FSDD/tree/master/mfcc-inverse-obfnet_fc%2Binfmodel_cnn)
+3. [mfcc-inverse-obfnet_fc+infmodel_cnn](./mfcc-inverse-obfnet_fc+infmodel_cnn)
 
 
-4. [mfcc-inverse-obfnet_fc+indmodel_fc](https://github.com/ntu-aiot/obfuscation-results-of-obfnet-on-FSDD/tree/master/mfcc-inverse-obfnet_fc%2Binfmodel_fc)
+4. [mfcc-inverse-obfnet_fc+indmodel_fc](./mfcc-inverse-obfnet_fc+infmodel_fc)
 
 
 
