@@ -24,7 +24,7 @@ The coordinator trains the concatenation of the ObfNet and the pre-trained infer
 
 
 3. Inference phase  
-Each participant randomly choose one ObfNet,execute it and then send the obfuscated results to the coordinator for inference.  
+Each participant randomly can choose one ObfNet,execute it and then send the obfuscated results to the coordinator for inference.  
 
 
 ### Obfuscation Results of ObfNet on FSDD 
@@ -40,9 +40,9 @@ i. infmodel_conv: it includes three convolutional layers, one maxpooling layer a
 ii. infmodel_fc: it includes five dense layers with ReLu activation.
 
 
-In order to make a comparison between the original MFCC representations and the obfuscated ones, we do the MFCC inverse using the Phython package [LibROSA](https://librosa.github.io/librosa/) to convert MFCC representations back to audio (wav files). The audios converted from the original MFCC representations can still be recognized by human despite some noise. In contrast, the audios converted from the obfuscated MFCC representations are unrecognizable by human. Here, the MFCC inversed audios of 20 ramdom original MFCC representations in the test set and the corresponding obfuscated MFCC representations are shown.  
+In order to make a comparison between the original MFCC representations and the obfuscated ones, we do the MFCC inverse using the Python package [LibROSA](https://librosa.github.io/librosa/) to convert MFCC representations back to audio (wav files). The audios converted from the original MFCC representations can still be recognized by humans despite some noise. In contrast, the audios converted from the obfuscated MFCC representations are unrecognizable by humans. Here, the MFCC inversed audios of 20 ramdom original MFCC representations in the test set and the corresponding obfuscated MFCC representations are shown.  
 
-For the inversed audios form original MFCC representations, files are named in the follwing format:mfcc_inverse_test_{index} _ label _ {digit label}.wav. They are in the folder [mfcc_inverse_original](./mfcc_inverse_original).
+For the inversed audios from original MFCC representations, files are named in the following format:mfcc_inverse_test_{index} _ label _ {digit label}.wav. They are in the folder [mfcc_inverse_original](./mfcc_inverse_original).
 
 
 
@@ -87,4 +87,4 @@ The audios inversed from the corresponding obfuscated MFCC representations by th
 
 [inverse_obfnet_fc+infmodel_fc_test_0_label_8.wav ![](imgs/playicon.png)](https://drive.google.com/file/d/13s2Asu-7IzDPZvYC4VvsapKZ6fX4MsvA/view?usp=sharing)  
 
-These audios inversed from the corresponding obfuscated MFCC representations are totally unrecognizable by human.
+These audios inversed from the corresponding obfuscated MFCC representations are totally unrecognizable by humans.
