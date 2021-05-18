@@ -3,7 +3,7 @@
 ## Obfuscation results of audio files 
 
 
-Source of Dataset: [Sound Mnist dataset](https://github.com/Jakobovski/free-spoken-digit-dataset)  
+Source of Dataset: [Free Spoken Digit Dataset (FSDD)](https://github.com/Jakobovski/free-spoken-digit-dataset)  
 
 
 ### Introduction to the Construction of ObfNet 
@@ -27,9 +27,9 @@ The coordinator trains the concatenation of the ObfNet and the pre-trained infer
 Each participant randomly can choose one ObfNet,execute it and then send the obfuscated results to the coordinator for inference.  
 
 
-### Obfuscation Results of ObfNet on Sound-MNIST
+### Obfuscation Results of ObfNet on FSDD
 
-In the Sound-MNIST dataset, there are 2000 audio samples (wav files). As for the data processing, we firstly use Mel-Frequency Cepstrum Coefficient (MFCC) to convert the wav files to 2-D images with the size 20*45. We suppose that the inference model at the coordinator takes the MFCC representations (images) as the input. ObfNet is then used to obfuscate the original MFCC representations (images). We split the data as 90% train-10% test. We tried two different structures of ObfNet when using two distinct inference models:
+In the FSDD dataset, there are 2000 audio samples (wav files). As for the data processing, we firstly use Mel-Frequency Cepstrum Coefficient (MFCC) to convert the wav files to 2-D images with the size 20*45. We suppose that the inference model at the coordinator takes the MFCC representations (images) as the input. ObfNet is then used to obfuscate the original MFCC representations (images). We split the data as 90% train-10% test. We tried two different structures of ObfNet when using two distinct inference models:
 
 1. The structures of ObfNets:  
 i. ObfNet_conv: it includes two convolutional layers, one maxpooling layer and one dense layer with ReLu activation.  
